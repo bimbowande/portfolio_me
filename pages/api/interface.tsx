@@ -27,7 +27,7 @@ export  interface socialLinksI{
 export type ManifestType = {
     personalInfo: personalInterfaceI,
     projects : [],
-    coreTechnologies: coreTechnologiesI
+    coreTechnologies: coreTechnologiesI,
     otherTechnologies: [string],
     experiences: [],
     resume:[],
