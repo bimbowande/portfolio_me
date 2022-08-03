@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { ReactElement} from 'react'
+import { LayoutContainer } from '../../styles'
 import { MetaHead } from '../MetaHead'
 import { Navbar } from '../Navbar/Navbar'
 
-export const Layout : React.FC = () => {
+export interface Props {
+    children?: ReactElement,
+    title?: string
+}
+
+export const Layout : React.FC<Props> = (Props) => {
   return (
    <>
      <MetaHead/>
      <>
-       <Navbar/>
+     <LayoutContainer>
+        <Navbar title={Props?.title}/>
+        {Props?.children}
+     </LayoutContainer> 
      </>
    </>
   )

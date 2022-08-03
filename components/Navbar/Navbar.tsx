@@ -1,5 +1,6 @@
 import React from 'react';
-import {personalInterfaceI} from '../../pages/api/interface'
+import { Container} from '../../styles';
+import {HeaderText} from '../../styles/Fonts'
 
 
 export interface NavbarI {
@@ -9,12 +10,12 @@ export interface NavbarI {
 
 export const Navbar: React.FC<NavbarI> = (NavbarI) => {
   return (
-    <div>
-        <h2>{NavbarI?.title || `Username not found`}</h2>
+    <Container>
+        <HeaderText>{NavbarI?.title || `Username not found`}</HeaderText>
         <div>
-
+            
         </div>
-    </div>
+        </Container>
   )
 }
 
