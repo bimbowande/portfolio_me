@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container} from '../../styles';
+
 import {HeaderText} from '../../styles/Fonts'
+import { NavContainer, NavIcon, NavIconContainer, NavText } from './styles';
 
 
 export interface NavbarI {
@@ -10,12 +11,15 @@ export interface NavbarI {
 
 export const Navbar: React.FC<NavbarI> = (NavbarI) => {
   return (
-    <Container>
+    <NavContainer>
+       <NavText>
         <HeaderText>{NavbarI?.title || `Username not found`}</HeaderText>
-        <div>
-            
-        </div>
-        </Container>
+       </NavText>
+       
+        <NavIconContainer>
+          <NavIcon className="uil uil-align-right"></NavIcon>
+        </NavIconContainer>
+    </NavContainer>
   )
 }
 

@@ -5,7 +5,7 @@
 export const Manifest : ManifestType = {
 
     personalInfo:{
-        name:'',
+        name:'bimbo',
         summary:"I'm a frontend developer at GIGL. I have a passion for developing beautiful and delightful experiences.",
         title:'Frontend Engineer'
     },

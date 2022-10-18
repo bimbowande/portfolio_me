@@ -8,6 +8,7 @@ export const MetaHead : React.FC = () =>{
             <meta name="description" content="." />
             <meta name="theme-color" content="#0a161c" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
         </Head>
     )
 }
