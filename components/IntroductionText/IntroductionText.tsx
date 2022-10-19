@@ -17,7 +17,7 @@ export const IntroductionText: React.FC<IntroTextPropI> = IntroTextPropI => {
         <i className="fa-solid fa-triangle"></i>
         <HeaderText color={colorvar?.greyColor} fontSize='.9rem' textAlign='center'>{IntroTextPropI?.title}</HeaderText>
         <Container textAlign='center'>
-            <HeaderText textAlign='center'>Hello, I'm Abimbola</HeaderText>
+            <HeaderText textAlign='center'>Hello, Im Abimbola</HeaderText>
             <BodyText>
                 {IntroTextPropI?.text}
             </BodyText>
