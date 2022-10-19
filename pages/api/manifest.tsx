@@ -6,8 +6,8 @@ export const Manifest : ManifestType = {
 
     personalInfo:{
         name:'bimbo',
-        summary:"I'm a frontend developer at GIGL. I have a passion for developing beautiful and delightful experiences.",
-        title:'Frontend Engineer'
+        summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing..I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
+        title:'Front-end Engineer'
     },
     
     projects:[],
@@ -20,10 +20,10 @@ export const Manifest : ManifestType = {
     resume:[],
 
     socialLinks:{
-        tw:'',
-        in:'',
-        medium:"",
-        github:'',
+        tw:'https://twitter.com/bimbowande',
+        in:'https://www.linkedin.com/in/bimbowande/',
+        medium:"https://medium.com/@bimbowande",
+        github:'https://github.com/bimbowande',
     }
 }
 

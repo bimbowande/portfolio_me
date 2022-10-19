@@ -1,4 +1,6 @@
 
 export interface HeaderTextI {
-    fontSize?: string
+    fontSize?: string;
+    textAlign?: string 
+    color?: string
 }
