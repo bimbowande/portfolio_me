@@ -31,5 +31,5 @@ export const NavContent = styled.div`
     align-items:center;
     justify-content:center;
     height:2.5rem;
-    border-radius:2.8rem
+    border-radius:2.8rem;
 `
