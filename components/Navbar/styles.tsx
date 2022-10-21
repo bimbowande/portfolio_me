@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { colorvar } from '../../styles/variables'
 
 export const NavIcon = styled.i`
- font-size: 2.2rem
+ font-size: 1.2rem
   
 `
 
@@ -17,7 +18,18 @@ export const NavIconContainer =  styled.div`
 export const NavContainer =  styled.div`
   display:flex;
   width:100%;
+
 `
 export const NavText = styled.div`
   flex:9;
+`
+
+export const NavContent = styled.div`
+    border:1px solid ${colorvar?.white};
+    display:flex;
+    width:2.5rem;
+    align-items:center;
+    justify-content:center;
+    height:2.5rem;
+    border-radius:2.8rem
 `

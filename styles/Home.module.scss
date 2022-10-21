@@ -1,4 +1,13 @@
 .home_container{
   margin-top: 150px ;
   width: 95% !important;
+  @media (max-width: 800px) {
+    margin-top: 30px;
+    width: 100% !important;
+  }
+}
+
+.media_icons{
+  color:#11895B;
+  font-size: 100px;
 }

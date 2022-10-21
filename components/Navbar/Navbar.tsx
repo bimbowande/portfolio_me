@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {HeaderText} from '../../styles/Fonts'
-import { NavContainer, NavIcon, NavIconContainer, NavText } from './styles';
+import { NavContainer, NavContent, NavIcon, NavIconContainer, NavText } from './styles';
 
 
 export interface NavbarI {
@@ -15,9 +15,12 @@ export const Navbar: React.FC<NavbarI> = (NavbarI) => {
        <NavText>
         <HeaderText>{NavbarI?.title || `Username not found`}</HeaderText>
        </NavText>
-       
+        
         <NavIconContainer>
-          <NavIcon className="uil uil-align-right"></NavIcon>
+          <NavContent>
+             <NavIcon className="fa-solid fa-bars"></NavIcon>
+          </NavContent>
+         
         </NavIconContainer>
     </NavContainer>
   )

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "./Media/devices";
 
 export interface LayoutContainerProp{
   bgColor?: string
@@ -14,10 +15,14 @@ export const LayoutContainer = styled.div<LayoutContainerProp>`
   height:100%;
   padding: 10px;
   background-color: #000;
+
+  @media ${devices?.mobile}{
+    padding:0;
+  }
 `
 
 export const Container =  styled.div<ContainerI>`
-  textalign:${(props) => props.textAlign}
+  text-align:${(props) => props.textAlign}
   
 `
 export const SectionContainer =  styled.section`

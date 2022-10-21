@@ -8,11 +8,13 @@ import  home from '../styles/Home.module.scss';
 
 
 const Home: NextPage = () => {
+
   return (
     <Layout>
        <SectionContainer className={home.home_container}>
           <SocialMediaDesktop/>
           <IntroductionText title={Manifest?.personalInfo?.title} text={Manifest?.personalInfo?.summary}/>
+          
        </SectionContainer>
     </Layout>
   )
