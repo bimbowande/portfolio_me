@@ -57,6 +57,7 @@ export const MenuLink = styled.a`
 export const MenuIcon = styled.i`
     font-size:30px;
     color:#11895B;
+    cursor:pointer;
 `
 
 export const MenuSocialLink = styled.div`

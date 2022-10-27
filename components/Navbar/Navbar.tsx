@@ -5,7 +5,8 @@ import { NavContainer, NavContent, NavIcon, NavIconContainer, NavText } from './
 
 
 export interface NavbarI {
-    title?: string
+    title?: string,
+    switchMenu?:()=>void
 
 }
 
@@ -18,7 +19,7 @@ export const Navbar: React.FC<NavbarI> = (NavbarI) => {
         
         <NavIconContainer>
           <NavContent>
-             <NavIcon className="fa-solid fa-bars"></NavIcon>
+             <NavIcon onClick={NavbarI?.switchMenu} className="fa-solid fa-bars"></NavIcon>
           </NavContent>
          
         </NavIconContainer>

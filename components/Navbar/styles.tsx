@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import { colorvar } from '../../styles/variables'
 
 export const NavIcon = styled.i`
- font-size: 1.2rem
+ font-size: 1.2rem;
+ cursor:pointer;
   
 `
 

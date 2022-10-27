@@ -1,4 +1,4 @@
-import React, { ReactElement} from 'react'
+import React, { ReactElement, useState} from 'react'
 import { LayoutContainer } from '../../styles';
 import { MetaHead } from '../MetaHead';
 import { Navbar } from '../Navbar/Navbar';
@@ -12,13 +12,21 @@ export interface LayoutProps {
 }
 
 export const Layout : React.FC<LayoutProps> = LayoutProps => {
+
+  const [menu, changeMenu] = useState<boolean>(false);
+
+  const toggleMenu = () =>{
+   
+    changeMenu(!menu)
+  }
+
   return (
     <>
      <MetaHead/>
      <>
       <LayoutContainer>
-          <Menu/>
-          <Navbar title={Manifest?.personalInfo?.name}/>
+         { menu && <Menu switchMenu = {toggleMenu}/>}
+          <Navbar switchMenu={toggleMenu} title={Manifest?.personalInfo?.name}/>
           {LayoutProps?.children}
       </LayoutContainer> 
      </>

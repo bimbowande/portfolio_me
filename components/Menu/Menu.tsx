@@ -5,7 +5,12 @@ import { MenuDivisionOne, MenuDivisionTwo, MenuIcon, MenuLink, MenuLinkText, Men
 import { pageLinks } from '../../pages/api/manifest';
 import { pageLink } from '../../pages/api/interface';
 
-export const Menu = () => {
+export interface MenuProps {
+    switchMenu: () => void
+
+}
+
+export const Menu: React.FC<MenuProps> = (MenuProps) => {
   return (
     <MenuStyle>
         <MenuDivisionOne></MenuDivisionOne>
@@ -32,7 +37,7 @@ export const Menu = () => {
                </MenuSocialLink>
             </SectionOne>
             <SectionTwo>
-               <MenuIcon className='fa-solid fa-xmark'></MenuIcon>
+               <MenuIcon onClick={MenuProps?.switchMenu} className='fa-solid fa-xmark'></MenuIcon>
             </SectionTwo>
         </MenuDivisionTwo>
     </MenuStyle>
