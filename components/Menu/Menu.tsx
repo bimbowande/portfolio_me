@@ -16,9 +16,9 @@ export const Menu = () => {
                </MenuNavHeading>
                <MenuNavBody>
 
-                {pageLinks.map((link:pageLink)=> 
-                    <MenuLinkText>
-                        <MenuLink href={`/${link?.linkAddress}`}>  
+                {pageLinks.map((link:pageLink,index:number)=> 
+                    <MenuLinkText key={index}>
+                        <MenuLink  href={`/${link?.linkAddress}`}>  
                             {link?.linkName}
                         </MenuLink> 
                     </MenuLinkText>
