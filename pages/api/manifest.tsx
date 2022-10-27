@@ -1,5 +1,5 @@
 
- import { ManifestType } from "./interface";
+ import { ManifestType, pageLink } from "./interface";
 
 
 export const Manifest : ManifestType = {
@@ -27,3 +27,25 @@ export const Manifest : ManifestType = {
     }
 }
 
+
+
+
+export const pageLinks : pageLink[] = [
+    {
+        linkName:'home',
+        linkAddress:'home'
+    },
+    {
+        linkName:'projects',
+        linkAddress:'projects'
+    },
+    {
+        linkName:'resume',
+        linkAddress:'resume'
+    },
+    {
+        linkName:'Contact Me',
+        linkAddress:'contact'
+    }
+
+]

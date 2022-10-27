@@ -33,3 +33,9 @@ export type ManifestType = {
     resume:[],
     socialLinks: socialLinksI
 }
+
+
+export interface pageLink{
+    linkName: string,
+    linkAddress:string
+}
