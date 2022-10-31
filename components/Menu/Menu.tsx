@@ -1,8 +1,8 @@
 import React from 'react'
 import { HeaderText } from '../../styles/Fonts'
 import { SocialMediaMobile } from '../SocialMedia/SocialMediaMobile'
-import { MenuDivisionOne, MenuDivisionTwo, MenuIcon, MenuLink, MenuLinkText, MenuNavBody, MenuNavHeading, MenuSocialLink, MenuStyle, SectionOne, SectionTwo, SocialLinkContainer } from './Style';
-import { pageLinks } from '../../pages/api/manifest';
+import { MenuDivisionOne, MenuDivisionTwo, MenuIcon, MenuLink, MenuLinkAdd, MenuLinkText, MenuNavBody, MenuNavHeading, MenuSocialLink, MenuStyle, NavClose, SectionOne, SectionTwo, SocialLinkContainer } from './Style';
+import { pageLinks,Manifest } from '../../pages/api/manifest';
 import { pageLink } from '../../pages/api/interface';
 
 export interface MenuProps {
@@ -32,12 +32,29 @@ export const Menu: React.FC<MenuProps> = (MenuProps) => {
                </MenuNavBody>
                <MenuSocialLink>
                   <SocialLinkContainer>
-                    <MenuIcon className=''></MenuIcon>
+                    <MenuLinkAdd href={Manifest?.socialLinks?.tw}>
+                      <MenuIcon className='fa-brands fa-twitter desktop_icons'></MenuIcon>
+                    </MenuLinkAdd>
+                  </SocialLinkContainer>
+                  <SocialLinkContainer>
+                    <MenuLinkAdd href={Manifest?.socialLinks?.github}>
+                      <MenuIcon className='fa-brands fa-github  desktop_icons'></MenuIcon>
+                    </MenuLinkAdd>
+                  </SocialLinkContainer>
+                  <SocialLinkContainer>
+                    <MenuLinkAdd className={Manifest?.socialLinks?.medium}>
+                      <MenuIcon className='fa-brands fa-medium desktop_icons'></MenuIcon>
+                    </MenuLinkAdd> 
+                  </SocialLinkContainer>
+                  <SocialLinkContainer>
+                    <MenuLinkAdd className={Manifest?.socialLinks?.in}>
+                      <MenuIcon className='fa-brands fa-linkedin-in desktop_icons'></MenuIcon>
+                    </MenuLinkAdd>
                   </SocialLinkContainer>
                </MenuSocialLink>
             </SectionOne>
             <SectionTwo>
-               <MenuIcon onClick={MenuProps?.switchMenu} className='fa-solid fa-xmark'></MenuIcon>
+               <NavClose onClick={MenuProps?.switchMenu} className='fa-solid fa-xmark'></NavClose>
             </SectionTwo>
         </MenuDivisionTwo>
     </MenuStyle>

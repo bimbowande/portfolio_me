@@ -13,12 +13,10 @@ export interface LayoutProps {
 
 export const Layout : React.FC<LayoutProps> = LayoutProps => {
 
-  const [menu, changeMenu] = useState<boolean>(false);
+  const [menu, changeMenu] = useState<boolean>(true);
 
-  const toggleMenu = () =>{
-   
-    changeMenu(!menu)
-  }
+  const toggleMenu = () => changeMenu(!menu)
+  
 
   return (
     <>
