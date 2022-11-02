@@ -6,7 +6,7 @@ export const Manifest : ManifestType = {
 
     personalInfo:{
         name:'Abimbola',
-        summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing..I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
+        summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing. I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
         title:'Front-end Engineer'
     },
     

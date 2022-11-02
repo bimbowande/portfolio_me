@@ -11,7 +11,6 @@ export const SocialMediaDesktop = () => {
                 <SocialText href={linkObj?.link}>{linkObj?.name}</SocialText>
             </SocialMediaLink>        
         )}
-
     </SocialContainer>
     
   )
