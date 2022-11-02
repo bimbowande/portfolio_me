@@ -10,8 +10,8 @@ export interface ContainerI{
 }
 
 export const LayoutContainer = styled.div<LayoutContainerProp>`
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  color:#fff;
   height:100%;
   padding: 10px;
   background-color: #000;
@@ -28,4 +28,9 @@ export const Container =  styled.div<ContainerI>`
 export const SectionContainer =  styled.section`
  width: 100%;
  display:flex;
+`
+
+export const LayoutContent =  styled.div`
+  width:90%;
+  margin: 0 auto;
 `

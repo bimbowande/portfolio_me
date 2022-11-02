@@ -24,10 +24,11 @@ export const SocialMediaLink = styled.div`
 export const SocialText = styled.a`
   transform: matrix(0, -1, 1, 0, 0, 0);
   transform-origin: 0 0;
-  font-weight:100;
+  font-weight:600;
   font-size:.96rem;
   color: ${colorvar?.linkColor};
   position:absolute;
+  text-transform:capitalize;
 
   &:hover{
     font-weight: 700;

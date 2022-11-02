@@ -5,7 +5,7 @@
 export const Manifest : ManifestType = {
 
     personalInfo:{
-        name:'bimbo',
+        name:'Abimbola',
         summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing..I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
         title:'Front-end Engineer'
     },
@@ -19,12 +19,29 @@ export const Manifest : ManifestType = {
 
     resume:[],
 
-    socialLinks:{
-        tw:'https://twitter.com/bimbowande',
-        in:'https://www.linkedin.com/in/bimbowande/',
-        medium:"https://medium.com/@bimbowande",
-        github:'https://github.com/bimbowande',
-    }
+    socialLinks:[
+        {
+            name:'twitter',
+            link:'https://twitter.com/bimbowande',
+            class:'fa-twitter '
+        },
+        {   
+            name:'github',
+            link:'https://github.com/bimbowande/',
+            class:'fa-github '
+        },
+        {
+            name:'Linkedin',
+            link:"https://www.linkedin.com/in/bimbowande/",
+            class:'fa-linkedin-in '
+        },
+        {
+            name:'Medium',
+            link:'https://medium.com/@bimbowande',
+            class:'fa-medium' 
+        }
+    ]
+        
 }
 
 

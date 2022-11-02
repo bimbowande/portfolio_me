@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/Media/devices";
 import { colorvar } from "../../styles/variables";
 
 export const MenuStyle = styled.div`
@@ -10,13 +11,16 @@ export const MenuStyle = styled.div`
     width:100%;
     overflow:hidden;
     background-color:#000;
-    z-index:8656789;
-
+    z-index:8656789;  
 `
 
 export const MenuDivisionOne = styled.div`
     flex:1;
     background-color: ${colorvar?.lighterGrey};
+
+    @media ${devices?.mobile}{
+        display:none
+    }
  
 `
 
@@ -24,6 +28,9 @@ export const MenuDivisionTwo = styled.div`
     flex:5;
     display:flex;
     justify-content: space-between;
+    @media ${devices?.mobile}{
+        flex-direction:column-reverse;
+    }
  
 `
 
@@ -31,17 +38,34 @@ export const SectionOne = styled.div `
     padding:20px;
     padding-left: 120px;
     padding-top:60px;
+
+    @media ${devices?.mobile}{
+        padding:0;
+        flex:10;        
+    }
 `
 
 export const SectionTwo = styled.div`
     padding:20px;
     padding-top:60px;
+
+    @media ${devices?.mobile}{
+        text-align:right;
+        padding-top:30px;
+    }
 `
 
-export const MenuNavHeading = styled.div``
+export const MenuNavHeading = styled.div`
+    @media ${devices?.mobile}{
+        text-align:center;
+    }
+`
 
 export const MenuNavBody = styled.div`
-    margin-top:150px
+    margin-top:150px;
+    @media ${devices?.mobile}{
+        text-align:center;
+    }
 ` 
 
 export const MenuLinkText = styled.div`
@@ -52,6 +76,11 @@ export const MenuLink = styled.a`
     text-transform:capitalize;
     font-size:2.0rem;
     font-weight:800;
+
+    @media ${devices?.mobile}{
+        font-size:1.4rem;
+        text-align:center;
+    }
    
 `
 
@@ -70,18 +99,21 @@ export const MenuLinkAdd = styled.a`
     justify-content:center;
     border-radius:50px;
     cursor:pointer;
-    t
 
     &:hover{
         background:rgba(233,233,233,.2);
     }
 `
+
 export const MenuSocialLink = styled.div`
     width:300px;
     display:flex;
     height:300px;
     gap:2rem;
-   
+
+    @media ${devices?.mobile}{
+        display:none
+    }
 `
 
 export const SocialLinkContainer = styled.div`
@@ -92,6 +124,11 @@ export const SocialLinkContainer = styled.div`
 `
 
 export const NavClose = styled.i`
-font-size:1.5rem
-
+    font-size:2.3rem;
+    cursor:pointer;
+    color:${colorvar?.greenColor};
+    
+    @media ${devices?.mobile}{
+        font-size:1.8rem
+    }
 `

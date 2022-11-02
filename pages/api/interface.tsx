@@ -17,10 +17,9 @@ export interface coreTechnologiesI{
 
 
 export  interface socialLinksI{
-    tw:string,
-    in:string,
-    medium:string,
-    github:string,
+    name:string,
+    link:string,
+    class:string,
 
 }
 
@@ -28,10 +27,10 @@ export type ManifestType = {
     personalInfo: personalInterfaceI,
     projects : [],
     coreTechnologies: coreTechnologiesI,
-    otherTechnologies: [string],
+    otherTechnologies: Array<string>,
     experiences: [],
     resume:[],
-    socialLinks: socialLinksI
+    socialLinks: Array<socialLinksI>
 }
 
 
