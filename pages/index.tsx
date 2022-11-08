@@ -14,7 +14,6 @@ const Home: NextPage = () => {
        <SectionContainer className={home.home_container}>
           <SocialMediaDesktop/>
           <IntroductionText title={Manifest?.personalInfo?.title} text={Manifest?.personalInfo?.summary}/>
-          
        </SectionContainer>
     </Layout>
   )

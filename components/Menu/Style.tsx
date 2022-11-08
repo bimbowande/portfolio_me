@@ -31,7 +31,6 @@ export const MenuDivisionTwo = styled.div`
     @media ${devices?.mobile}{
         flex-direction:column-reverse;
     }
- 
 `
 
 export const SectionOne = styled.div `
@@ -81,7 +80,6 @@ export const MenuLink = styled.a`
         font-size:1.4rem;
         text-align:center;
     }
-   
 `
 
 export const MenuIcon = styled.i`
@@ -112,7 +110,7 @@ export const MenuSocialLink = styled.div`
     gap:2rem;
 
     @media ${devices?.mobile}{
-        display:none
+        display:none; 
     }
 `
 
@@ -127,8 +125,8 @@ export const NavClose = styled.i`
     font-size:2.3rem;
     cursor:pointer;
     color:${colorvar?.greenColor};
-    
+
     @media ${devices?.mobile}{
-        font-size:1.8rem
+        font-size:1.8rem;
     }
 `
