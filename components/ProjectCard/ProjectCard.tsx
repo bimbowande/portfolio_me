@@ -1,4 +1,5 @@
 import React from 'react'
+import { ContainerDiv, ParagraphText, ProjectCardContainer, ProjectText, SectionContainer, StackTextContainer, StacktText } from './style'
 
 export interface ProjectcardI {
     ProjectName?: string,
@@ -9,19 +10,21 @@ export interface ProjectcardI {
 
 export const ProjectCard:React.FC<ProjectcardI> = (ProjectcardI) => {
   return (
-    <div>
-        <h2>{ProjectcardI?.ProjectName}</h2>
-        <div>
+    <ProjectCardContainer>
+        <ProjectText>{ProjectcardI?.ProjectName}</ProjectText>
+        <SectionContainer>
             {ProjectcardI?.stacks.map((data:string,index:number)=> 
-                <div><h3>{data}</h3></div>
+                <StackTextContainer key={index}>
+                    <StacktText>{data}</StacktText>
+                </StackTextContainer>
             )}
-        </div>
-        <div>
-            <p>{ProjectcardI?.description}</p>
-        </div>
+        </SectionContainer>
+        <ContainerDiv>
+            <ParagraphText>{ProjectcardI?.description}</ParagraphText>
+        </ContainerDiv>
         <div>
             <h4><a href={ProjectcardI?.link}>{ProjectcardI?.link} </a></h4>
         </div>
-    </div>
+    </ProjectCardContainer>
   )
 }

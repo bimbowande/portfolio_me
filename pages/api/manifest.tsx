@@ -11,9 +11,31 @@ export const Manifest : ManifestType = {
     },
     
     projects:[],
-    coreTechnologies: [],
 
-    otherTechnologies: [''],
+    frameworks:[
+        'React',
+        'Angular',
+        'VueJs'
+    ],
+    coreTechnologies: [
+        'TypeScript',
+        'JavaScript',
+        'CSS',
+        'SASS',
+        'HTML',
+        'Python',
+        'SQL',
+        'MongoDB',
+        'GraphQL'
+    ],
+
+    otherTechnologies: [
+        'GIT',
+        'Enzyme',
+        'React StoryBook',
+        'Bootstrap',
+        'Tailwind'
+    ],
 
     experiences:[],
 

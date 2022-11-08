@@ -5,7 +5,9 @@ body {
     padding:0;
 }
 body{
-  font-family: 'Space Grotesk', sans-serif
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 a {
@@ -25,4 +27,8 @@ html,body{
 #__next{
   height: 100%;
   width: 100%;
+}
+
+.push_down_resume{
+  margin-top:50px
 }

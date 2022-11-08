@@ -3,7 +3,9 @@ export const colorvar : any = {
     linkColor:'#11895B',
     greyColor:'rgba(255,255,255,.4)',
     greenColor:`#11895B`,
-    lighterGrey:`#1C1C1CBF`
+    lighterGrey:`#1C1C1CBF`,
+    cardColor: `#06060B`,
+    skillColor: ` #11895B`
 
 } 
 

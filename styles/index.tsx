@@ -12,9 +12,10 @@ export interface ContainerI{
 export const LayoutContainer = styled.div<LayoutContainerProp>`
   width: 100%;
   color:#fff;
-  height:100%;
   padding: 10px;
   background-color: #000;
+  height:100vh;
+  overflow:scroll;
 
   @media ${devices?.mobile}{
     padding:0;
