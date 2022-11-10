@@ -6,8 +6,9 @@ export const Manifest : ManifestType = {
 
     personalInfo:{
         name:'Abimbola',
+        surname: 'Oluwagbuyi',
         summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing. I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
-        title:'Front-end Engineer'
+        title:'Frontend Engineer'
     },
     
     projects:[],
@@ -32,9 +33,9 @@ export const Manifest : ManifestType = {
     otherTechnologies: [
         'GIT',
         'Enzyme',
-        'React StoryBook',
+        'React Storybook',
         'Bootstrap',
-        'Tailwind'
+        'TailwindCSS'
     ],
 
     experiences:[],

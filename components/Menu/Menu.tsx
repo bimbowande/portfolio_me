@@ -23,7 +23,7 @@ export const Menu: React.FC<MenuProps> = (MenuProps) => {
 
                 {pageLinks.map((link:pageLink,index:number)=> 
                     <MenuLinkText key={index}>
-                        <MenuLink  href={`/${link?.linkAddress}`}>  
+                        <MenuLink  href={`./${link?.linkAddress}`}>  
                             {link?.linkName}
                         </MenuLink> 
                     </MenuLinkText>

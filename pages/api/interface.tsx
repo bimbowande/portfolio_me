@@ -11,14 +11,10 @@ export interface socialLinkInterfaceI {
     github: string
 }
 
-
-
-
 export  interface socialLinksI{
     name:string,
     link:string,
     class:string,
-
 }
 
 export type ManifestType = {
@@ -31,7 +27,6 @@ export type ManifestType = {
     resume:[],
     socialLinks: Array<socialLinksI>,
 }
-
 
 export interface pageLink{
     linkName: string,
