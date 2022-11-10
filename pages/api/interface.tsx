@@ -1,7 +1,8 @@
 export interface personalInterfaceI {
     name?: string,
     summary?: string,
-    title?: string
+    title?: string,
+    surname:string
 }
 
 export interface socialLinkInterfaceI {
