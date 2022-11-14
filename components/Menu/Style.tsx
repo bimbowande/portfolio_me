@@ -12,6 +12,7 @@ export const MenuStyle = styled.div`
     overflow:hidden;
     background-color:#000;
     z-index:8656789;  
+    position:fixed;
 `
 
 export const MenuDivisionOne = styled.div`
