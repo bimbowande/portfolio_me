@@ -24,7 +24,7 @@ export type ManifestType = {
     frameworks:Array<string>,
     coreTechnologies: Array<string>,
     otherTechnologies: Array<string>,
-    experiences: [],
+    experiences: Array<ExperienceI>,
     resume:[],
     socialLinks: Array<socialLinksI>,
 }
@@ -32,4 +32,12 @@ export type ManifestType = {
 export interface pageLink{
     linkName: string,
     linkAddress:string
+}
+
+export interface ExperienceI{
+    company: string,
+    title: string,
+    startDate: string,
+    endDate: string,
+    accomplishment:string
 }

@@ -1,9 +1,8 @@
-import React from 'react'
-import { HeaderText } from '../../styles/Fonts'
-import { SocialMediaMobile } from '../SocialMedia/SocialMediaMobile'
+import React from 'react';
 import { MenuDivisionOne, MenuDivisionTwo, MenuIcon, MenuLink, MenuLinkAdd, MenuLinkText, MenuNavBody, MenuNavHeading, MenuSocialLink, MenuStyle, NavClose, SectionOne, SectionTwo, SocialLinkContainer } from './Style';
 import { pageLinks,Manifest } from '../../pages/api/manifest';
 import { pageLink,socialLinksI } from '../../pages/api/interface';
+import Link from 'next/link';
 
 export interface MenuProps {
     switchMenu: () => void
@@ -23,9 +22,9 @@ export const Menu: React.FC<MenuProps> = (MenuProps) => {
 
                 {pageLinks.map((link:pageLink,index:number)=> 
                     <MenuLinkText key={index}>
-                        <MenuLink  href={`./${link?.linkAddress}`}>  
-                            {link?.linkName}
-                        </MenuLink> 
+                        <Link  href={`./${link?.linkAddress}`}>  
+                           <MenuLink> {link?.linkName}</MenuLink>
+                        </Link> 
                     </MenuLinkText>
                 )}
                  

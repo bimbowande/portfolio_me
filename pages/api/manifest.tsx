@@ -38,7 +38,37 @@ export const Manifest : ManifestType = {
         'TailwindCSS'
     ],
 
-    experiences:[],
+    experiences:[
+        {
+            company:'AltoStream',
+            title:' Lead Frontend Engineer',
+            startDate:'Mar 2022 ',
+            endDate:'Present',
+            accomplishment:'The striped hyena (Hyaena hyaena) is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia and the Indian subcontinent. It is listed by the IUCN as near-threatened, as the global population is estimated to be under 10,000 mature individuals which continues to experience deliberate and incidental persecution along with a decrease in its'
+        },
+        {
+            company:'GIGX',
+            title:' Lead Frontend Engineer',
+            startDate:'June 2021',
+            endDate:'Mar 2022',
+            accomplishment:'The striped hyena (Hyaena hyaena) is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia and the Indian subcontinent. It is listed by the IUCN as near-threatened, as the global population is estimated to be under 10,000 mature individuals which continues to experience deliberate and incidental persecution along with a decrease in its'
+        },
+        {
+            company:'GIGL',
+            title:' Software Engineer',
+            startDate:'Feb 2019',
+            endDate:'Jun 2021',
+            accomplishment:'The striped hyena (Hyaena hyaena) is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia and the Indian subcontinent. It is listed by the IUCN as near-threatened, as the global population is estimated to be under 10,000 mature individuals which continues to experience deliberate and incidental persecution along with a decrease in its'
+        },
+        {
+            company:'Planet Nest',
+            title:' Full-stack Engineer',
+            startDate:'May 2017',
+            endDate:'Oct 2019 ',
+            accomplishment:'The striped hyena (Hyaena hyaena) is a species of hyena native to North and East Africa, the Middle East, the Caucasus, Central Asia and the Indian subcontinent. It is listed by the IUCN as near-threatened, as the global population is estimated to be under 10,000 mature individuals which continues to experience deliberate and incidental persecution along with a decrease in its'
+        }
+
+    ],
 
     resume:[],
 
@@ -73,7 +103,7 @@ export const Manifest : ManifestType = {
 export const pageLinks : pageLink[] = [
     {
         linkName:'home',
-        linkAddress:'home'
+        linkAddress:''
     },
     {
         linkName:'projects',

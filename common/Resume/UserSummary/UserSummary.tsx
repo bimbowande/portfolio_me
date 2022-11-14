@@ -12,7 +12,7 @@ export const UserSummary:React.FC<UserSummaryI> = (UserSummaryI) => {
 }
 
 interface UserSummaryI{
-    username: string,
+    username: string ,
     title: string,
     description:string
 }
