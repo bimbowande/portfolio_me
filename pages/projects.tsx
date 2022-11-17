@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import React from 'react'
 import { PageContent, PageHeader } from '../common/Project/styles'
-import { Layout } from '../components/Layout/Layout'
+import { Layout } from '../components/Layout/Layout';
 import { ProjectCard } from '../components/ProjectCard/ProjectCard'
 import { ProjectSectionContainer } from '../components/ProjectCard/style'
 

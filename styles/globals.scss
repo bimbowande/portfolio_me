@@ -9,7 +9,7 @@ body{
   font-family: 'Poppins', sans-serif
 }
 
-button{
+button,textarea,input{
   font-family: 'Poppins', sans-serif
 }
 a {
@@ -26,6 +26,14 @@ html,body{
   height:100%;
 }
 
+input,textarea{
+  border:none;
+  outline:none;
+  color:transparentize($color: #fff, $amount: 0.4);
+}
+button{
+  border:none;
+}
 #__next{
   height: 100%;
   width: 100%;
