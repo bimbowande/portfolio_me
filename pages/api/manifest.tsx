@@ -11,7 +11,11 @@ export const Manifest : ManifestType = {
         title:'Frontend Engineer'
     },
     
-    projects:[],
+    projects:[
+        {
+            name:'AltoStream Media'
+        }
+    ],
 
     frameworks:[
         'React',

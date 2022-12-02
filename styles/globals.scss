@@ -6,9 +6,17 @@ body {
 }
 
 body{
-  font-family: 'Poppins', sans-serif
+  font-family: 'Poppins', sans-serif;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 
+div{
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
 button,textarea,input{
   font-family: 'Poppins', sans-serif
 }
