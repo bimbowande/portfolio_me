@@ -4,10 +4,13 @@ import { colorvar } from "../../styles/variables";
 
 export const ProjectText = styled.h3`
     font-size:1.2rem;
+
+    margin:0
 `
 export const SectionContainer = styled.div`
     display:flex;
-    gap:1rem
+    gap:1rem;
+    flex-flow:wrap;
 `
 
 export const ProjectCardContainer = styled.div`
@@ -53,6 +56,7 @@ export const ContainerDiv = styled.div`
 
 export const ParagraphText = styled.p`
     font-size:.85rem;
-    margin-top:40px;
+    margin-top:10px;
+    height:40px;
     line-height:24px;
 `

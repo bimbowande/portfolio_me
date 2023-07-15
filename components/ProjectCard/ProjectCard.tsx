@@ -12,6 +12,10 @@ export const ProjectCard:React.FC<ProjectcardI> = (ProjectcardI) => {
   return (
     <ProjectCardContainer>
         <ProjectText>{ProjectcardI?.ProjectName}</ProjectText>
+       
+        <ContainerDiv>
+            <ParagraphText>{ProjectcardI?.description}</ParagraphText>
+        </ContainerDiv>
         <SectionContainer>
             {ProjectcardI?.stacks.map((data:string,index:number)=> 
                 <StackTextContainer key={index}>
@@ -19,11 +23,8 @@ export const ProjectCard:React.FC<ProjectcardI> = (ProjectcardI) => {
                 </StackTextContainer>
             )}
         </SectionContainer>
-        <ContainerDiv>
-            <ParagraphText>{ProjectcardI?.description}</ParagraphText>
-        </ContainerDiv>
-        <div>
-            <h4><a href={ProjectcardI?.link}>{ProjectcardI?.link} </a></h4>
+        <div style={{marginTop:20, fontSize:15}}>
+            <em><a style={{textDecoration:'underline'}} href={ProjectcardI?.link}>link to project </a></em>
         </div>
     </ProjectCardContainer>
   )

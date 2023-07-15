@@ -54,3 +54,23 @@ button{
 a, button{
   cursor: pointer;
 }
+
+
+@keyframes menuLink {
+  
+  10%{
+    width: 10%;
+  }
+  30%{
+    width:30% ;
+  }
+  50%{
+    width: 50%;
+  }
+  70%{
+    width: 70%;
+  }
+  100%{
+    width: 100%;
+  }
+}

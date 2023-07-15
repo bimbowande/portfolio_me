@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 export interface MenuProps {
     switchMenu: () => void
-
 }
 
 export const Menu: React.FC<MenuProps> = (MenuProps) => {

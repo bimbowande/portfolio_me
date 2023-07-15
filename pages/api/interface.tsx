@@ -19,12 +19,15 @@ export  interface socialLinksI{
 }
 
 export interface ProjectI{
-    name:string
+    name:string,
+    skills:string[]
+    description:string
+    link?: string
 }
 
 export type ManifestType = {
     personalInfo: personalInterfaceI,
-    projects : [ProjectI],
+    projects : Array<ProjectI>,
     frameworks:Array<string>,
     coreTechnologies: Array<string>,
     otherTechnologies: Array<string>,

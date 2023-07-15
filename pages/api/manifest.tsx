@@ -10,10 +10,48 @@ export const Manifest : ManifestType = {
         summary:"Software Engineer with a demonstrated history of working in complex teams and on large web development projects. Skilled in software requirement analysis, design, development, deployment, and testing. I use ReactJs, TypeScript ,Angular, MongoDB and GraphQL",
         title:'Frontend Engineer'
     },
+
     
     projects:[
         {
-            name:'AltoStream Media'
+            name:'Weather Wizard',
+            description:'Monitior the weather of most Capital Cities in the world',
+            skills:['react-query', 'NodeJs','React','TypeScript','github'],
+            link:'https://bimbowande.github.io/weather_wizard/'
+        },
+        {
+            name:'GIGX',
+            description:'The secure and simple way to send and receive money across borders',
+            skills:['NextJs', 'React','TypeScript','NodeJs','Redux','GraphQl'],
+            link:'https://gigxpad.com'
+
+        },
+        {
+            name:'PAKT',
+            description:'Creating a collaborative platform for community engagements ',
+            skills:['NextJs', 'React','TypeScript','NodeJs','Redux','GraphQl','Tailwind'],
+            link:'https://pakt.world'
+
+        },
+        {
+            name:'GIGO',
+            description:'Nigeria no. 1 fastest delivery app ',
+            skills:['NextJs', 'React','TypeScript','NodeJs','Redux','GraphQl','Tailwind','Angular'],
+            link:'https://giglogistics.com'
+
+        },
+        {
+            name:'Memmour',
+            description:"Shared gallery for event's pictures ",
+            skills:['PHP', 'React','TypeScript','MYSQL','Jquery','Javascript','Tailwind','Angular'],
+            link:''
+
+        },
+        {
+            name:'Now.ng',
+            description:'Vsisbility for brands ',
+            skills:['PHP', 'React','TypeScript','MYSQL','Jquery','Javascript','Tailwind','Angular'],
+            link:'https://now.ng/'
         }
     ],
 
@@ -31,7 +69,8 @@ export const Manifest : ManifestType = {
         'Python',
         'SQL',
         'MongoDB',
-        'GraphQL'
+        'GraphQL',
+        'PostgresQl'
     ],
 
     otherTechnologies: [
