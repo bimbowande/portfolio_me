@@ -76,8 +76,23 @@ export const MenuLink = styled.a`
     text-transform:capitalize;
     font-size:2.0rem;
     font-weight:800;
-
-    @media ${devices?.mobile}{
+    overflow: hidden;
+    color:royalblue;
+  background: linear-gradient(to right, #fff 5%,  #fff 10%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  &:hover {
+    background-position: 0 100%;
+    background: linear-gradient(to right, #fbf 5%,  #ddf 100%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+     @media ${devices?.mobile}{
         font-size:1.4rem;
         text-align:center;
     }
@@ -126,7 +141,10 @@ export const NavClose = styled.i`
     font-size:2.3rem;
     cursor:pointer;
     color:${colorvar?.greenColor};
-
+    transition: ease-in all 200ms;
+    &:hover{
+        transform: scale(1.2) rotate(140deg);
+    }
     @media ${devices?.mobile}{
         font-size:1.8rem;
     }

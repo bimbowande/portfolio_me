@@ -8,7 +8,7 @@ export interface personalInterfaceI {
 export interface socialLinkInterfaceI {
     tw: string,
     in: string,
-    medium: string,
+medium: string,
     github: string
 }
 

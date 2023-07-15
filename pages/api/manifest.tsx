@@ -49,7 +49,7 @@ export const Manifest : ManifestType = {
         },
         {
             name:'Now.ng',
-            description:'Vsisbility for brands ',
+            description:'Visibility for brands ',
             skills:['PHP', 'React','TypeScript','MYSQL','Jquery','Javascript','Tailwind','Angular'],
             link:'https://now.ng/'
         }

@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write \"./*/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -41,10 +42,11 @@
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.3",
     "eslint-plugin-storybook": "^0.6.1",
+    "prettier": "^3.0.0",
     "typescript": "4.7.4"
   },
   "resolutions": {
-    "styled-components":"^5"
+    "styled-components": "^5"
   },
   "lint-staged": {
     "*.{js,scss,css}": [

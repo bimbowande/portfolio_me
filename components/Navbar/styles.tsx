@@ -13,6 +13,10 @@ const moveAnimation = keyframes`
 export const NavIcon = styled.i`
  font-size: 1.2rem;
  cursor:pointer;
+
+ &:hover{
+  color: ${colorvar?.greenColor}
+ }
   
 `
 
@@ -25,12 +29,16 @@ export const NavIconContainer =  styled.div`
   align-items: center;
   justify-content:flex-end;
   flex-direction: row;
+  &:hover{
+    color: ${colorvar?.greenColor}
+   }
 
 `
 export const NavContainer =  styled.div`
   display:flex;
   width:100%;
   animation-duration: 8s;
+  
 
 `
 export const NavText = styled.div`
@@ -45,6 +53,7 @@ export const NavContent = styled.div`
     justify-content:center;
     height:2.5rem;
     border-radius:2.8rem;
+   
 `
 
 
