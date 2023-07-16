@@ -15,7 +15,7 @@ export const Manifest : ManifestType = {
     projects:[
         {
             name:'Weather Wizard',
-            description:'Monitior the weather of most Capital Cities in the world.',
+            description:'Monitor the weather of most Capital Cities in the world.',
             skills:['react-query', 'NodeJs','React','TypeScript','github'],
             link:'https://bimbowande.github.io/weather_wizard/'
         },
@@ -35,7 +35,7 @@ export const Manifest : ManifestType = {
         },
         {
             name:'GIGO',
-            description:'Nigeria no. 1 fastest delivery app.',
+            description:"Nigeria's fastest delivery app.",
             skills:['NextJs', 'React','TypeScript','NodeJs','Redux','GraphQl','Tailwind','Angular'],
             link:'https://giglogistics.com'
 
