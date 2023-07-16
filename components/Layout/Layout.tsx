@@ -22,7 +22,7 @@ export const Layout : React.FC<LayoutProps> = LayoutProps => {
 
   return (
     <>
-     <MetaHead/>
+     <MetaHead title={`OLuwagbuyi Abimbola`}/>
      <>
       <LayoutContainer>
         <LayoutContent>
