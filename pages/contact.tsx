@@ -5,6 +5,7 @@ import { PageHeader } from '../common/Project/styles';
 import { ContactBtn, InputGroup, PageSection } from '../common/Contact/style';
 import { Input } from '../common/Contact/Input';
 import { ButtonContainer } from '../common/Resume/Styles';
+import { MetaHead } from '../components/MetaHead';
 
  const Contact: NextPage = () => {
 
@@ -16,7 +17,9 @@ import { ButtonContainer } from '../common/Resume/Styles';
 
   return (
     <Layout>
+     
         <div>
+        <MetaHead title='Abimbola Oluwagbuyi - Contact me'/>
             <PageHeader>{`{`} Contact {`}`}</PageHeader>
             <PageSection>
               <InputGroup>

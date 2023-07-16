@@ -8,12 +8,14 @@ import { Skills } from '../common/Resume/Technology/Skills'
 import { UserSummary } from '../common/Resume/UserSummary/UserSummary'
 import { Manifest } from './api/manifest'
 import { Experience } from '../common/Resume/Experience/Experience'
+import { MetaHead } from '../components/MetaHead'
 
  const Resume: NextPage = () => {
   return (
    <Layout>
         <div className='push_down_resume'>
             <PageHeader>{`{`} Resume {`}`}</PageHeader>
+            <MetaHead title='Abimbola Oluwagbuyi - Resume'/>
             <ResumeContent>
                 <ResumeSectionOne>
                     <Skills/>
