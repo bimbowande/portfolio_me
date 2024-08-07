@@ -15,7 +15,6 @@ export interface NavbarI {
 export const Navbar: React.FC<NavbarI> = (NavbarI) => {
 
   useEffect(()=>{
-    console.log(NavbarI?.refPointer)
 
   },[NavbarI?.refPointer])
   return (

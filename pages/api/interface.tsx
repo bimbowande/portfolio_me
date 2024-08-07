@@ -3,12 +3,13 @@ export interface personalInterfaceI {
     summary?: string,
     title?: string,
     surname:string
+    resumeSummary:string
 }
 
 export interface socialLinkInterfaceI {
     tw: string,
     in: string,
-medium: string,
+    medium: string,
     github: string
 }
 

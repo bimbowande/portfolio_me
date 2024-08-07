@@ -9,6 +9,8 @@ import { UserSummary } from '../common/Resume/UserSummary/UserSummary'
 import { Manifest } from './api/manifest'
 import { Experience } from '../common/Resume/Experience/Experience'
 import { MetaHead } from '../components/MetaHead'
+import Link from 'next/link'
+
 
  const Resume: NextPage = () => {
   return (
@@ -21,12 +23,12 @@ import { MetaHead } from '../components/MetaHead'
                     <Skills/>
                 </ResumeSectionOne>
                 <ResumeSectionTwo>
-                   <UserSummary username={`${Manifest?.personalInfo?.name}  ${Manifest?.personalInfo?.surname}`} title={`${Manifest?.personalInfo?.title}`} description={`${Manifest?.personalInfo?.summary}`}/>
+                   <UserSummary username={`${Manifest?.personalInfo?.name}  ${Manifest?.personalInfo?.surname}`} title={`${Manifest?.personalInfo?.title}`} description={`${Manifest?.personalInfo?.resumeSummary}`}/>
                    <Experience/>
                 </ResumeSectionTwo>
                 <ResumeSectionThree>
                     <ButtonContainer>
-                        <Button> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down"></IconBtn></Button>
+                       <Link href='/abimbola_oluwagbuyi_cv.pdf'  passHref><Button> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down"></IconBtn></Button></Link> 
                     </ButtonContainer>
                 </ResumeSectionThree>
             </ResumeContent>

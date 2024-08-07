@@ -2,13 +2,15 @@
  import { ManifestType, pageLink } from "./interface";
 
 
+
 export const Manifest : ManifestType = {
 
     personalInfo:{
         name:'Abimbola',
         surname: 'Oluwagbuyi',
         summary:"A seasoned Frontend Engineer with over 5 years of experience, I am proficient in ReactJs, Angular, GraphQL, and SASS. With a passion for creating exceptional user experiences, I thrive in collaborative environments where I can apply my expertise in building dynamic and responsive interfaces. Whether working on complex web applications or implementing elegant UI designs, I am committed to delivering high-quality solutions that exceed expectations",
-        title:'Frontend Engineer'
+        title:'Senior Software Engineer',
+        resumeSummary:'With eight years of experience, I am a dedicated Software Engineer specializing in NextJs, React, Angular, and VueJs. I have a deep understanding of key concepts such as components, services, modules, and routing. My career has been marked by a strong reputation for designing and developing sophisticated web and mobile applications and solutions, optimizing code efficiency, and ensuring top performance. I am well-versed in cutting-edge technologies and development tools, staying at the forefront of industry advancements. Known for my problem-solving skills and attention to detail, I consistently achieve outstanding results. Additionally, my collaborative nature allows me to seamlessly integrate with cross-functional teams, working harmoniously with designers and backend developers to create cohesive and visually compelling user interfaces.'
     },
 
     
@@ -84,10 +86,18 @@ export const Manifest : ManifestType = {
 
     experiences:[
         {
+            company:'Boohoo',
+            title:' Senior Frontend Engineer',
+            startDate:'Aug 2023 ',
+            endDate:'Feb 2024',
+            accomplishment:'Optimizing the performance of the web platform by improving page load times and minimizing the number of HTTP requests. Designed a modern, responsive, and visually appealing user interface that provides an intuitive and easy-to-use experience for users'
+        }
+        ,
+        {
             company:'Pakt',
             title:' Senior Frontend Engineer',
             startDate:'Mar 2022 ',
-            endDate:'Present',
+            endDate:'Dec 2022',
             accomplishment:'Optimizing the performance of the web platform by improving page load times and minimizing the number of HTTP requests. Designed a modern, responsive, and visually appealing user interface that provides an intuitive and easy-to-use experience for users'
         },
         {

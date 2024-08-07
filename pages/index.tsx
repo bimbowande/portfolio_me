@@ -15,7 +15,7 @@ const Home: NextPage = () => {
        <SectionContainer className={home.home_container}>
        <MetaHead title='Abimbola Oluwagbuyi - Frontend Engineer'/>
           <SocialMediaDesktop/>
-          <IntroductionText title={Manifest?.personalInfo?.title} text={Manifest?.personalInfo?.summary}/>
+          <IntroductionText userName={Manifest?.personalInfo?.name ?? ''} title={Manifest?.personalInfo?.title} text={Manifest?.personalInfo?.summary}/>
        </SectionContainer>
     </Layout>
   )
