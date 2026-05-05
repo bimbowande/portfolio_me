@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "../../styles/Media/devices";
 
 
-export const TextArea = styled.textarea`
+export const TextArea = styled.input<React.InputHTMLAttributes<HTMLInputElement>>`
     width:100%;
     height:100px;
     padding:15px;
@@ -14,7 +14,7 @@ export const TextArea = styled.textarea`
     }
 `
 
-export const InputBox = styled.input`
+export const InputBox = styled.textarea<React.TextareaHTMLAttributes<HTMLTextAreaElement>>`
     width:100%;
     padding:15px;
     margin-bottom:20px;
