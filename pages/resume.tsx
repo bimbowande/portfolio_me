@@ -6,7 +6,7 @@ import {Button, ButtonContainer, IconBtn, ResumeContent, ResumeSectionOne, Resum
 
 import { Skills } from '../common/Resume/Technology/Skills'
 import { UserSummary } from '../common/Resume/UserSummary/UserSummary'
-import { Manifest } from './api/manifest'
+import { cv, Manifest } from './api/manifest'
 import { Experience } from '../common/Resume/Experience/Experience'
 import { MetaHead } from '../components/MetaHead'
 import Link from 'next/link'
@@ -28,7 +28,7 @@ import Link from 'next/link'
                 </ResumeSectionTwo>
                 <ResumeSectionThree>
                     <ButtonContainer>
-                       <Link href='/abimbola_oluwagbuyi_cv.pdf'  passHref><Button> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down"></IconBtn></Button></Link> 
+                       <Link href={cv.link2}  passHref><Button> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down"></IconBtn></Button></Link> 
                     </ButtonContainer>
                 </ResumeSectionThree>
             </ResumeContent>

@@ -8,10 +8,10 @@ export const Manifest : ManifestType = {
     personalInfo:{
         name:'Abimbola',
         surname: 'Oluwagbuyi',
-        summary:"A seasoned Frontend Engineer with over 5 years of experience, I am proficient in ReactJs, Angular, GraphQL, and SASS. With a passion for creating exceptional user experiences, I thrive in collaborative environments where I can apply my expertise in building dynamic and responsive interfaces. Whether working on complex web applications or implementing elegant UI designs, I am committed to delivering high-quality solutions that exceed expectations",
+        summary:"Software Engineer with nearly a decade of experience designing and delivering scalable, high-performance web applications within microfrontend and monolith architectures. Specialising in JavaScript, TypeScript, React, Next.js, Angular, Vue.js, GraphQL, Go, PHP, and MySQL, with a strong focus on building resilient systems, optimising user experience, and maintaining clean, maintainable codebases. Experienced in implementing controlled release strategies using Unleash, managing CI/CD pipelines via Jenkins, and monitoring production systems with Grafana and Grafana Loki. Proven ability to collaborate cross-functionally, lead complex feature delivery, and drive improvements in performance, reliability, and deployment processes.",
         title:'Senior Software Engineer',
-        resumeSummary:'With eight years of experience, I am a dedicated Software Engineer specializing in NextJs, React, Angular, and VueJs. I have a deep understanding of key concepts such as components, services, modules, and routing. My career has been marked by a strong reputation for designing and developing sophisticated web and mobile applications and solutions, optimizing code efficiency, and ensuring top performance. I am well-versed in cutting-edge technologies and development tools, staying at the forefront of industry advancements. Known for my problem-solving skills and attention to detail, I consistently achieve outstanding results. Additionally, my collaborative nature allows me to seamlessly integrate with cross-functional teams, working harmoniously with designers and backend developers to create cohesive and visually compelling user interfaces.'
-    },
+        resumeSummary:'Software Engineer with nearly a decade of experience designing and delivering scalable, high-performance web applications within microfrontend and monolith architectures. Specialising in JavaScript, TypeScript, React, Next.js, Angular, Vue.js, GraphQL, Go, PHP, and MySQL, with a strong focus on building resilient systems, optimising user experience, and maintaining clean, maintainable codebases. Experienced in implementing controlled release strategies using Unleash, managing CI/CD pipelines via Jenkins, and monitoring production systems with Grafana and Grafana Loki. Proven ability to collaborate cross-functionally, lead complex feature delivery, and drive improvements in performance, reliability, and deployment processes.'
+},
 
     
     projects:[
@@ -85,12 +85,26 @@ export const Manifest : ManifestType = {
     ],
 
     experiences:[
+         {
+            company:'Betfred, United Kingdom',
+            title:' Senior Frontend Engineer',
+            startDate:'Ausgust 2025 ',
+            endDate:'Till Date',
+            accomplishment:'Implemented feature flagging with Unleash and managed CMDB configurations to enable controlled rollouts and seamless player migration, significantly reducing deployment risk and improving release stability'
+        },
+        {
+            company:'Findchow, UK',
+            title:' Lead Frontend Engineer',
+            startDate:'March 2023 ',
+            endDate:'August 2024',
+            accomplishment:'Developed and maintained a robust component library using Storybook, Tailwind CSS, SASS, and Vite, resulting in a unified design system and reducing UI development time across teams by 30%.'
+        },
         {
             company:'Boohoo',
             title:' Senior Frontend Engineer',
             startDate:'Aug 2023 ',
-            endDate:'Feb 2024',
-            accomplishment:'Optimizing the performance of the web platform by improving page load times and minimizing the number of HTTP requests. Designed a modern, responsive, and visually appealing user interface that provides an intuitive and easy-to-use experience for users'
+            endDate:'March 2024',
+            accomplishment:'Built and maintained high-performance B2B eCommerce web applications using ReactJS and TypeScript, improving UI responsiveness and reducing customer support queries through a more intuitive user experience.'
         }
         ,
         {
@@ -151,6 +165,10 @@ export const Manifest : ManifestType = {
         
 }
 
+export const cv  =  {
+    link1: '/abimbola_oluwagbuyi_cv.pdf',
+    link2: '/Charis_abimbola-Resume.pdf'
+}
 
 
 
