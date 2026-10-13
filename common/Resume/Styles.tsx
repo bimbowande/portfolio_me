@@ -68,6 +68,10 @@ export const ButtonContainer = styled.div`
 `
 
 export const Button = styled.button`
+    display:block;
+    box-sizing:border-box;
+    text-align:center;
+    text-decoration:none;
     padding:15px;
     width:100%;
     background-color:#1F1F1F;

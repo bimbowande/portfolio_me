@@ -9,7 +9,6 @@ import { UserSummary } from '../common/Resume/UserSummary/UserSummary'
 import { cv, Manifest } from './api/manifest'
 import { Experience } from '../common/Resume/Experience/Experience'
 import { MetaHead } from '../components/MetaHead'
-import Link from 'next/link'
 
 
  const Resume: NextPage = () => {
@@ -28,7 +27,7 @@ import Link from 'next/link'
                 </ResumeSectionTwo>
                 <ResumeSectionThree>
                     <ButtonContainer>
-                       <Link href={cv.link2}  passHref><Button> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down"></IconBtn></Button></Link> 
+                        <Button as="a" href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${cv.link2}`} download> Download CV <IconBtn className="fa-solid fa-calendar-arrow-down" /></Button>
                     </ButtonContainer>
                 </ResumeSectionThree>
             </ResumeContent>
